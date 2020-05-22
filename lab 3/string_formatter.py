@@ -1,0 +1,95 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'string_formatter.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_StringFormatter(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(343, 255)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName("gridLayout")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.check_min_length = QtWidgets.QCheckBox(self.centralwidget)
+        self.check_min_length.setObjectName("check_min_length")
+        self.gridLayout.addWidget(self.check_min_length, 1, 1, 1, 1)
+        self.spinBox = QtWidgets.QSpinBox(self.centralwidget)
+        self.spinBox.setObjectName("spinBox")
+        self.gridLayout.addWidget(self.spinBox, 1, 2, 1, 1)
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 1, 3, 1, 1)
+        self.check_rep = QtWidgets.QCheckBox(self.centralwidget)
+        self.check_rep.setObjectName("check_rep")
+        self.gridLayout.addWidget(self.check_rep, 2, 1, 1, 1)
+        self.line_rep_symbol = QtWidgets.QLineEdit(self.centralwidget)
+        self.line_rep_symbol.setMaxLength(1)
+        self.line_rep_symbol.setObjectName("line_rep_symbol")
+        self.gridLayout.addWidget(self.line_rep_symbol, 2, 2, 1, 1)
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setObjectName("label_4")
+        self.gridLayout.addWidget(self.label_4, 2, 3, 1, 1)
+        self.check_space = QtWidgets.QCheckBox(self.centralwidget)
+        self.check_space.setObjectName("check_space")
+        self.gridLayout.addWidget(self.check_space, 3, 1, 1, 2)
+        self.check_sort = QtWidgets.QCheckBox(self.centralwidget)
+        self.check_sort.setObjectName("check_sort")
+        self.gridLayout.addWidget(self.check_sort, 4, 1, 1, 1)
+        self.widget = QtWidgets.QWidget(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.widget.sizePolicy().hasHeightForWidth())
+        self.widget.setSizePolicy(sizePolicy)
+        self.widget.setObjectName("widget")
+        self.formLayout = QtWidgets.QFormLayout(self.widget)
+        self.formLayout.setContentsMargins(20, -1, 9, -1)
+        self.formLayout.setObjectName("formLayout")
+        self.radioButton = QtWidgets.QRadioButton(self.widget)
+        self.radioButton.setObjectName("radioButton")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.radioButton)
+        self.radioButton_2 = QtWidgets.QRadioButton(self.widget)
+        self.radioButton_2.setObjectName("radioButton_2")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.radioButton_2)
+        self.gridLayout.addWidget(self.widget, 5, 1, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 7, 0, 1, 1)
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setObjectName("pushButton")
+        self.gridLayout.addWidget(self.pushButton, 6, 1, 1, 3)
+        self.line_output = QtWidgets.QLineEdit(self.centralwidget)
+        self.line_output.setObjectName("line_output")
+        self.gridLayout.addWidget(self.line_output, 7, 1, 1, 3)
+        self.line_input = QtWidgets.QLineEdit(self.centralwidget)
+        self.line_input.setObjectName("line_input")
+        self.gridLayout.addWidget(self.line_input, 0, 1, 1, 3)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Форматирование строки"))
+        self.label.setText(_translate("MainWindow", "Строка"))
+        self.check_min_length.setText(_translate("MainWindow", "Удалить все слова меньше"))
+        self.label_3.setText(_translate("MainWindow", "букв"))
+        self.check_rep.setText(_translate("MainWindow", "Заменить все цифры на "))
+        self.label_4.setText(_translate("MainWindow", "символ"))
+        self.check_space.setText(_translate("MainWindow", "Вставить пробел между символами"))
+        self.check_sort.setText(_translate("MainWindow", "Сортировать слова в строке"))
+        self.radioButton.setText(_translate("MainWindow", "По размеру"))
+        self.radioButton_2.setText(_translate("MainWindow", "Лексикографически"))
+        self.label_2.setText(_translate("MainWindow", "Результат"))
+        self.pushButton.setText(_translate("MainWindow", "Форматировать"))
